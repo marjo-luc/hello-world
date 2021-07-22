@@ -6,7 +6,7 @@ class: CommandLineTool
 hints:
   DockerRequirement:
     dockerPull: marjoluc/hello-world:stable
-arguments: ["run.sh", "hello-world.ipynb", "output.ipynb"]
+arguments: ["/run.sh", "hello-world.ipynb", "output.ipynb"]
 inputs:
   input_1:
     type: string
