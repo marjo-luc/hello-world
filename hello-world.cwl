@@ -2,11 +2,13 @@
 
 cwlVersion: v1.0
 class: CommandLineTool
-
+#baseCommand: bash
 hints:
   DockerRequirement:
-    dockerPull: marjoluc/hello-world:stable
-arguments: ["run.sh", "hello-world.ipynb", "output.ipynb"]
+    #dockerPull: marjoluc/hello-world:stable
+    dockerPull: hello-world_test 
+arguments: ["bash", "./run.sh", "hello-world.ipynb", "output.ipynb"]
+#arguments: ["hello-world.ipynb", "output.ipynb", "-p", "input_1"]
 inputs:
   input_1:
     type: string

@@ -1,5 +1,4 @@
-#!/bin/sh
-
+#!/bin/bash
 POSITIONAL=()
 command="papermill hello-world.ipynb output.ipynb"
 while [[ $# -gt 0 ]]; do
