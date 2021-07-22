@@ -2,18 +2,11 @@
 
 cwlVersion: v1.0
 class: CommandLineTool
-#baseCommand: bash
 hints:
   DockerRequirement:
-<<<<<<< HEAD
     #dockerPull: marjoluc/hello-world:stable
     dockerPull: hello-world_test 
 arguments: ["bash", "./run.sh", "hello-world.ipynb", "output.ipynb"]
-#arguments: ["hello-world.ipynb", "output.ipynb", "-p", "input_1"]
-=======
-    dockerPull: marjoluc/hello-world:stable
-arguments: ["/run.sh", "hello-world.ipynb", "output.ipynb"]
->>>>>>> 445fa9e5cff5e2f5452211511c768487e1dd8301
 inputs:
   input_1:
     type: string
