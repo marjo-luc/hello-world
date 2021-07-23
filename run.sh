@@ -7,8 +7,8 @@ while [[ $# -gt 0 ]]; do
   case $key in
     -Sinput_1|--Sinput_1)
       command="${command} -p input_1 $2"
-      shift # past argument
-      shift # past value
+      shift
+      shift
       ;;
     *) 
       POSITIONAL+=("$1")
