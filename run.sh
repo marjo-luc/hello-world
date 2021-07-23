@@ -1,6 +1,7 @@
 #!/bin/bash
 POSITIONAL=()
-command="papermill hello-world.ipynb output.ipynb"
+#command="papermill /home/mlucas/hello-world.ipynb output.ipynb"
+command="papermill ${HOME}/hello-world.ipynb output.ipynb"
 while [[ $# -gt 0 ]]; do
   key="$1"
   echo $key
@@ -16,5 +17,6 @@ while [[ $# -gt 0 ]]; do
       ;;
   esac
 done
-
+echo "Built papermill command:"
+echo $command
 ${command}

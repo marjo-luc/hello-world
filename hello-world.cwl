@@ -6,7 +6,7 @@ hints:
   DockerRequirement:
     #dockerPull: marjoluc/hello-world:stable
     dockerPull: hello-world_test 
-arguments: ["bash", "./run.sh", "hello-world.ipynb", "output.ipynb"]
+arguments: ["/home/mlucas/run.sh", "/home/mlucas/hello-world.ipynb", "output.ipynb"]
 inputs:
   input_1:
     type: string
