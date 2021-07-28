@@ -1,7 +1,6 @@
 #!/bin/bash
 POSITIONAL=()
-#command="papermill /home/mlucas/hello-world.ipynb output.ipynb"
-command="papermill ${HOME}/hello-world.ipynb output.ipynb"
+command="papermill ${HOME}/hello-world/hello-world.ipynb ${HOME}/hello-world/output.ipynb"
 while [[ $# -gt 0 ]]; do
   key="$1"
   echo $key
