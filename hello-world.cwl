@@ -4,14 +4,13 @@ class: CommandLineTool
 baseCommand: papermill
 hints:
   DockerRequirement:
-    #dockerPull: marjoluc/hello-world:stable
-    dockerPull: jupyter_test 
+    dockerPull: marjo-luc/hello-world:stable
 inputs:
-  nb1_input_notebook:
+  input_nb:
     type: File
     inputBinding:
       position: 1
-  nb1_output_notebook:
+  output_nb:
     type: string
     inputBinding:
       position: 2
