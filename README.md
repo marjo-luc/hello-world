@@ -1,13 +1,19 @@
 # hello-world
 
-OGC-compliant application package containing a simple Jupyter Notebook that writes an input string to an output file.
+OGC-compliant application package containing a simple Jupyter Notebook that prints the input string. There are several ways to execute the notebook -- see below for examples.
 
 For the CWL runner installation instructions and more information on CWL in general, see [here](https://www.commonwl.org/).
 For more information regarding OGC, see [here](https://www.ogc.org/).
 
+### Grab the code
+```
+git clone https://github.com/marjo-luc/hello-world.git
+cd hello-world
+```
+
 ### Execute notebook using the CWL runner
 ```
-cwl-runner --no-read-only --preserve-entire-environment hello-world.cwl inputs.json
+cwl-runner --no-read-only hello-world.cwl --input_nb hello-world.ipynb --output_nb output.ipynb --parameters inputs.json
 ```
 
 ### Execute notebook in batch mode using Docker
