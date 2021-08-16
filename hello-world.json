@@ -1,4 +1,5 @@
-"processDescription": {
+{
+    "processDescription": {
         "process": {
             "id": "hello-world",
             "title": "Hello World",
@@ -17,23 +18,23 @@
                     "title": "Parameter File",
                     "input": {
                         "literalDataDomains": [{
-                                "dataType": {
-                                    "name": "File"
-                                }
-                            }]
+                            "dataType": {
+                                "name": "File"
+                            }
+                        }]
                     }
                 }
             ],
             "outputs": [{
-                    "id": "output",
-                    "title": "stdout",
-                    "output": {
-                        "formats": [{
-                                "mimeType": "text/*",
-                                "default": true
-                            }]
-                    }
-                }]
+                "id": "output",
+                "title": "stdout",
+                "output": {
+                    "formats": [{
+                        "mimeType": "text/*",
+                        "default": true
+                    }]
+                }
+            }]
         },
         "processVersion": "1.0.0",
         "jobControlOptions": [
@@ -45,6 +46,6 @@
     },
     "immediateDeployment": true,
     "executionUnit": [{
-            "href": "marjoluc/hello-world:stable"
-        }],
+        "href": "marjoluc/hello-world:stable"
+    }]
 }
