@@ -4,7 +4,7 @@ OGC-compliant application package containing a simple Jupyter Notebook that prin
 
 The application descriptor is the ```hello-world.json``` file. This file contains the link to the workflow that will be executed and the docker image to build/execute within that workflow, among other things. The ```hello-world.cwl``` file is the workflow definition. This file defines the workflow steps and entrypoints to the docker containers.
 
-For the CWL runner installation instructions and more information on CWL in general, see [here](https://www.commonwl.org/) and [here](https://github.com/common-workflow-language/cwltool).
+For the CWL runner installation instructions and more information on CWL in general, see [here](https://github.com/common-workflow-language/cwltool) and [here](https://www.commonwl.org/).
 For more information regarding OGC, see [here](https://www.ogc.org/).
 
 ### Grab the code
