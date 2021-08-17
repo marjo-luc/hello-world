@@ -46,6 +46,6 @@
     },
     "immediateDeployment": true,
     "executionUnit": [{
-        "href": "marjoluc/hello-world:stable"
+        "href": "docker.io/marjoluc/hello-world:stable"
     }]
 }
