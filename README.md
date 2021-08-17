@@ -13,7 +13,13 @@ git clone https://github.com/marjo-luc/hello-world.git
 cd hello-world
 ```
 
-### Execute notebook using the CWL runner
+### Execute main workflow using the CWL runner
+
+```
+cwl-runner main-workflow.cwl --input_nb hello-world.ipynb --output_nb output.ipynb --parameters inputs.json
+```
+
+### Execute subworkflow using the CWL runner
 ```
 cwl-runner --no-read-only hello-world.cwl --input_nb hello-world.ipynb --output_nb output.ipynb --parameters inputs.json
 ```
