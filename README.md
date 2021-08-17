@@ -16,7 +16,7 @@ cd hello-world
 ### Execute main workflow using the CWL runner
 
 ```
-cwl-runner main-workflow.cwl --input_nb hello-world.ipynb --output_nb output.ipynb --parameters inputs.json
+cwl-runner --no-read-only main-workflow.cwl --input_nb hello-world.ipynb --output_nb output.ipynb --parameters inputs.json
 ```
 
 ### Execute subworkflow using the CWL runner
