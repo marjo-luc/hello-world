@@ -46,6 +46,6 @@
     },
     "immediateDeployment": true,
     "executionUnit": [{
-        "href": "docker.io/marjoluc/hello-world:stable"
+        "href": "s3://soamc-application-package-catalog/hello-world.tar.gz"
     }]
 }
