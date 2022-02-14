@@ -21,6 +21,6 @@ USER $NB_USER
 WORKDIR $HOME/hello-world
 RUN echo $PWD
 
-#CMD ["/bin/bash"]
-ENTRYPOINT ["run.sh", "hello-world.ipynb", "output.ipynb", "-Sinput_1", "Hello Universe"]
+CMD ["/bin/bash"]
+#ENTRYPOINT ["run.sh", "hello-world.ipynb", "output.ipynb", "-Sinput_1", "Hello Universe"]
 #CMD ["jupyter", "notebook", "--ip", "0.0.0.0"]
