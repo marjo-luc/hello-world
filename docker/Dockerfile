@@ -9,18 +9,19 @@ RUN apt-get update && \
     apt-get install -y git
     
 RUN pip install papermill
-RUN python -c "import black; black.cache.CACHE_DIR.mkdir(parents=True, exist_ok=True)"
+
+USER $NB_USER
+
+ADD https://api.github.com/repos/marjo-luc/hello-world/git/refs/heads/main version.json
 
 RUN cd $HOME \
     && git clone https://github.com/marjo-luc/hello-world.git
 
 RUN cd hello-world
 
-USER $NB_USER
+RUN python -c "import black; black.cache.CACHE_DIR.mkdir(parents=True, exist_ok=True)"
 
 WORKDIR $HOME/hello-world
-RUN echo $PWD
 
+#ENTRYPOINT ["./run.sh", "hello-world.ipynb", "output.ipynb", "-Sinput_1", "Universe"]
 CMD ["/bin/bash"]
-#ENTRYPOINT ["run.sh", "hello-world.ipynb", "output.ipynb", "-Sinput_1", "Hello Universe"]
-#CMD ["jupyter", "notebook", "--ip", "0.0.0.0"]
