@@ -12,6 +12,8 @@ inputs:
       position: 1
   output_nb:
     type: string
+    inputBinding:
+      position: 2
   parameters:
     type: File
     inputBinding:
@@ -21,7 +23,7 @@ outputs:
   output_nb_file:
     type: File
     outputBinding:
-      glob: output.ipynb
+      glob: $(inputs.output_nb)
   example_out:
     type: stdout
 stdout: _stdout.txt
