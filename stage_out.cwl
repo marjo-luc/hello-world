@@ -4,7 +4,7 @@ class: CommandLineTool
 baseCommand: papermill
 hints:
   DockerRequirement:
-    dockerPull: marjo-luc/hello-world:stable
+    dockerPull: marjoluc/hello-world:stable
 inputs:
   input_nb:
     type: File

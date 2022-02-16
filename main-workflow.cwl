@@ -23,7 +23,7 @@ steps:
       parameters: parameters
 
     out:
-    - [example_out]
+      [example_out]
 
   process:
     run: hello-world.cwl
@@ -32,7 +32,7 @@ steps:
       output_nb: output_nb
       parameters: parameters
     out:
-    - [example_out]
+      [example_out]
 
   stage_out:
     run: hello-world.cwl

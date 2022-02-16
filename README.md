@@ -30,7 +30,7 @@ For more information regarding OGC, see [here](https://www.ogc.org/).
 Install the [CWL command line tool](https://github.com/common-workflow-language/cwltool).
 
 ```
-git clone https://github.com/marjoluc/hello-world.git
+git clone https://github.com/marjo-luc/hello-world.git
 cd hello-world
 ```
 
@@ -51,7 +51,7 @@ cwl-runner --no-read-only main-workflow.cwl --input_nb hello-world.ipynb --outpu
 
 Execute notebook in batch mode using Docker
 ```
-docker run marjo-luc/hello-world:stable ./run.sh hello-world.ipynb output.ipynb -Sinput_1 "Hello!"
+docker run marjoluc/hello-world:stable ./run.sh hello-world.ipynb output.ipynb -Sinput_1 "Hello!"
 ```
 <br />
 
