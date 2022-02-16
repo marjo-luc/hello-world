@@ -4,7 +4,7 @@ class: CommandLineTool
 baseCommand: [papermill, /home/jovyan/hello-world/hello-world.ipynb, output_nb.ipynb]
 hints:
   DockerRequirement:
-    dockerPull: marjo-luc/hello-world:stable
+    dockerPull: marjoluc/hello-world:stable
 requirements:
   ShellCommandRequirement: {}
 inputs:

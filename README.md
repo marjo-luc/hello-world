@@ -30,7 +30,7 @@ For more information regarding OGC, see [here](https://www.ogc.org/).
 Install the [CWL command line tool](https://github.com/common-workflow-language/cwltool).
 
 ```
-git clone https://github.com/marjo-luc/hello-world.git
+git clone https://github.com/marjoluc/hello-world.git
 cd hello-world
 ```
 
