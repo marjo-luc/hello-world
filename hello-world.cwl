@@ -6,7 +6,7 @@ hints:
   DockerRequirement:
     dockerPull: pymonger/hello-world:stable
 requirements:
-- class: ShellCommandRequirement
+  ShellCommandRequirement: {}
 inputs:
   input_1:
     type: string
