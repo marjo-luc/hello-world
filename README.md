@@ -39,13 +39,13 @@ cd hello-world
 
 Execute subworkflow using the CWL runner
 ```
-cwl-runner --no-read-only hello-world.cwl --input_nb hello-world.ipynb --output_nb output.ipynb --parameters inputs.json
+cwl-runner --no-read-only hello-world.cwl --input_1 "Hi!"
 ```
 <br />
 
 Execute main workflow using the CWL runner
 ```
-cwl-runner --no-read-only main-workflow.cwl --input_nb hello-world.ipynb --output_nb output.ipynb --parameters inputs.json
+cwl-runner --no-read-only main-workflow.cwl --input_1 "Hi!"
 ```
 <br />
 
