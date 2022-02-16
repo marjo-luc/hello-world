@@ -6,7 +6,7 @@
             "owsContext": {
                 "offering": {
                     "content": {
-                        "href": "https://raw.githubusercontent.com/marjo-luc/hello-world/main/main-workflow.cwl"
+                        "href": "https://raw.githubusercontent.com/marjo-luc/hello-world/main/hello-world.cwl"
                     }
                 }
             },
