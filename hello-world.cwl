@@ -1,29 +1,26 @@
 #!/usr/bin/env cwl-runner
 cwlVersion: v1.0
 class: CommandLineTool
-baseCommand: papermill
+baseCommand: [papermill, /home/jovyan/hello-world/hello-world.ipynb, output_nb.ipynb]
 hints:
   DockerRequirement:
-    dockerPull: marjoluc/hello-world:stable
+    dockerPull: pymonger/hello-world:stable
+requirements:
+- class: ShellCommandRequirement
 inputs:
-  input_nb:
-    type: File
-    inputBinding:
-      position: 1
-  output_nb:
+  input_1:
     type: string
     inputBinding:
-      position: 2
-  parameters:
-    type: File
-    inputBinding:
-      position: 3
-      prefix: -f  
+      position: 1
+      shellQuote: false
+      prefix: --parameters
+      valueFrom: |
+        input_1 "$(self)"
 outputs:
   output_nb_file:
     type: File
     outputBinding:
-      glob: $(inputs.output_nb)
+      glob: output_nb.ipynb
   product_file:
     type: File
     outputBinding:

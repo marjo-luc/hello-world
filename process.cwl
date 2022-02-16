@@ -4,7 +4,7 @@ class: CommandLineTool
 baseCommand: papermill
 hints:
   DockerRequirement:
-    dockerPull: marjoluc/hello-world:stable
+    dockerPull: pymonger/hello-world:stable
 inputs:
   input_nb:
     type: File

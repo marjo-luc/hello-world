@@ -51,7 +51,7 @@ cwl-runner --no-read-only main-workflow.cwl --input_nb hello-world.ipynb --outpu
 
 Execute notebook in batch mode using Docker
 ```
-docker run marjoluc/hello-world:stable ./run.sh hello-world.ipynb output.ipynb -Sinput_1 "Hello!"
+docker run pymonger/hello-world:stable ./run.sh hello-world.ipynb output.ipynb -Sinput_1 "Hello!"
 ```
 <br />
 
