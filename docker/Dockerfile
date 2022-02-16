@@ -12,10 +12,10 @@ RUN pip install papermill
 
 USER $NB_USER
 
-ADD https://api.github.com/repos/pymonger/hello-world/git/refs/heads/main version.json
+ADD https://api.github.com/repos/marjo-luc/hello-world/git/refs/heads/main version.json
 
 RUN cd $HOME \
-    && git clone https://github.com/pymonger/hello-world.git
+    && git clone https://github.com/marjo-luc/hello-world.git
 
 RUN cd hello-world
 

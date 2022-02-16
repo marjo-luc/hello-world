@@ -4,7 +4,7 @@ class: CommandLineTool
 baseCommand: [papermill, /home/jovyan/hello-world/hello-world.ipynb, output_nb.ipynb]
 hints:
   DockerRequirement:
-    dockerPull: pymonger/hello-world:stable
+    dockerPull: marjo-luc/hello-world:stable
 requirements:
   ShellCommandRequirement: {}
 inputs:

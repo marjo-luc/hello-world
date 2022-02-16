@@ -6,7 +6,7 @@
             "owsContext": {
                 "offering": {
                     "content": {
-                        "href": "https://raw.githubusercontent.com/pymonger/hello-world/main/hello-world.cwl"
+                        "href": "https://raw.githubusercontent.com/marjo-luc/hello-world/main/hello-world.cwl"
                     }
                 }
             },
@@ -46,6 +46,6 @@
     },
     "immediateDeployment": true,
     "executionUnit": [{
-        "href": "docker://pymonger/hello-world:stable"
+        "href": "docker://marjo-luc/hello-world:stable"
     }]
 }
