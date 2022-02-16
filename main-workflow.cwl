@@ -26,7 +26,7 @@ steps:
     - example_out
 
   process:
-    run: process.cwl
+    run: hello-world.cwl
     in:
       input_nb: input_nb
       output_nb: output_nb
@@ -35,11 +35,11 @@ steps:
     - example_out
 
   stage_out:
-    run: stage_out.cwl
+    run: hello-world.cwl
     in:
       input_nb: input_nb
       output_nb: output_nb
       parameters: parameters
 
     out:
-    - example_out
+      [example_out]

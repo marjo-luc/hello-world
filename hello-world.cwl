@@ -14,15 +14,16 @@ inputs:
     type: string
     inputBinding:
       position: 2
-      separate: true
-      shellQuote: true
-    streamable: false
   parameters:
     type: File
     inputBinding:
       position: 3
       prefix: -f  
 outputs:
+  output_nb_file:
+    type: File
+    outputBinding:
+      glob: $(inputs.output_nb)
   example_out:
     type: stdout
 stdout: _stdout.txt
