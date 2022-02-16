@@ -24,6 +24,10 @@ outputs:
     type: File
     outputBinding:
       glob: $(inputs.output_nb)
+  product_file:
+    type: File
+    outputBinding:
+      glob: temp.txt
   example_out:
     type: stdout
 stdout: _stdout.txt
