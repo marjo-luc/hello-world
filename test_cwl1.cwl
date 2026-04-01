@@ -6,7 +6,7 @@ $graph:
   id: sardem-sarsen1
   inputs:
     bbox:
-      doc: Bounding box as 'LEFT BOTTOM RIGHT TOP'
+      doc: Bounding box as 'TEST CHANGE'
       label: bounding box
       type: string
     stac_catalog_folder:
