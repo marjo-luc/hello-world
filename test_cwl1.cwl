@@ -9,14 +9,14 @@ $graph:
       doc: Bounding box as 'LEFT BOTTOM RIGHT TOP'
       label: bounding box
       type: string
-    test1:
-      doc: test
-      label: test
-      type: test
     stac_catalog_folder:
       doc: STAC catalog folder
       label: catalog folder
       type: Directory
+    test1: 
+      doc: test
+      label: test
+      type: test
   outputs:
     out:
       type: Directory
@@ -26,8 +26,8 @@ $graph:
       run: '#main'
       in:
         bbox: bbox
-        test1: test1
         stac_catalog_folder: stac_catalog_folder
+        test1: test1
       out:
       - outputs_result
 - class: CommandLineTool
@@ -49,17 +49,16 @@ $graph:
         position: 1
         prefix: --bbox
       default: -118.06817 34.22169 -118.05801 34.22822
-    test1:
-      type: string
-      inputBinding:
-        position: 3
-        prefix: --test1
-      default: -118.06817 34.22169 -118.05801 34.22822
     stac_catalog_folder:
       type: Directory
       inputBinding:
         position: 2
         prefix: --stac_catalog_folder
+    test1:
+      type: string
+      inputBinding:
+        position: 3
+        prefix: --test1
   outputs:
     outputs_result:
       outputBinding:
