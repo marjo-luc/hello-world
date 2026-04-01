@@ -16,7 +16,7 @@ $graph:
     test1: 
       doc: test
       label: test
-      type: test
+      type: string
   outputs:
     out:
       type: Directory
